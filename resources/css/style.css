@@ -19,6 +19,15 @@ img {
     object-fit: cover;
 }
 
+p {
+    font-size: 1.4rem;
+    color: black;
+    margin-top: 5px;
+    line-height: 2.5rem;
+    font-weight: 300;
+    letter-spacing: .05rem;
+}
+
 .container {
     min-height: 100vh;
     width: 100%;
@@ -122,9 +131,6 @@ img {
 /* End Hero Section */
 
 /* Service Section */
-
-/* End of Service Section */
-
 #services .services {
     flex-direction: column;
     text-align: center;
@@ -145,14 +151,6 @@ img {
 
 #services .section-title span {
     color: crimson;
-}
-
-#services .service-top p {
-    font-size: 1.4rem;
-    margin-top: 5px;
-    line-height: 2.5rem;
-    font-weight: 300;
-    letter-spacing: .05rem;
 }
 
 #services .service-bottom {
@@ -196,6 +194,21 @@ img {
     width: 80px;
     margin-bottom: 20px;
 }
+
+#services .service-item h2 {
+    font-size: 2rem;
+    color: white;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+#services .service-item p {
+    color: white;
+    text-align: left;
+    font-size: 1.4rem;
+    line-height: 1.9rem;
+}
+/* End of Service Section */
 
 /* keyframes */
 
