@@ -449,6 +449,11 @@ p {
 #projects .project-item:hover .project-img img{
     transform: scale(1.1);
 }
+
+#projects .projects .all-projects .project-info a {
+    color: white;
+    text-decoration: underline;
+}
 /* End of Projects Section */
 
 /* About Section */
