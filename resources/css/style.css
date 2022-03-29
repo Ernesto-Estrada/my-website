@@ -326,12 +326,28 @@ p {
     flex-direction: column;
     padding: 30px;
     border-radius: 10px;
-    background-image: url(../Images/item-background.png);
+    /*background-image: url(../Images/item-background.png);*/
     background-size: cover;
     margin: 10px 5%;
     position: relative;
     z-index: 1;
     overflow: hidden;
+}
+
+.front {
+    background-image: url(../Images/services/frontend-service.jpg);
+}
+
+.back {
+    background-image: url(../Images/services/backend.png);
+}
+
+.full {
+    background-image: url(../Images/services/fullstack-service.jpg);
+}
+
+.mobile {
+    background-image: url(../Images/services/Mobile-App.png);
 }
 
 #services .service-item::after {
