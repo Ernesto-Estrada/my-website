@@ -9,6 +9,52 @@
     <link rel="stylesheet" href="./resources/css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/62ef8dffe6.js" crossorigin="anonymous"></script>
+    <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 40px;
+      margin: 0;
+      background-color: #f0f0f0;
+      font-family: Arial, sans-serif;
+    }
+
+    .chat-button {
+      padding: 12px 24px;
+      font-size: 18px;
+      background-color: #004070;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+     color: #FFFFFF;
+     background-color: #004070;
+} 
+
+    .chat-button:hover {
+      background-color: #005fcc;
+    }
+
+    .chatbot-container {
+      display: none; /* Hidden by default */
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+      overflow: hidden;
+    }
+
+    iframe {
+      border: none;
+      border-radius: 10px;
+      width: 350px;
+      height: 430px;
+    }
+  </style>
 </head>
 
 <body>
@@ -266,6 +312,22 @@
         </div>
     </section>
     <!-- End of Contact Section -->
+
+    <button class="chat-button" onclick="showChatbot()">Chat</button>
+
+  <div class="chatbot-container" id="chatbot">
+    <iframe
+      allow="microphone"
+      src="https://console.dialogflow.com/api-client/demo/embedded/f7cbb7fd-32fa-4ff5-901b-d13b094bb8aa">
+    </iframe>
+  </div>
+
+  <script>
+    function showChatbot() {
+      const chatbot = document.getElementById('chatbot');
+      chatbot.style.display = 'block';
+    }
+  </script>
 
     <!-- Footer -->
     <section id="footer">
